@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLTEX.HTML</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050510;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #080817;
+    border-bottom: 1px solid #176bff;
+    z-index: 1000;
+}
+
+.logo {
+    color: #00aaff;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #007bff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 120px 8% 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    color: #00aaff;
+    text-shadow: 0 0 25px #0066ff;
+}
+
+h2 {
+    color: #9b65ff;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px 8px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#0066ff,#8a2be2);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px #0066ff;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #8a2be2;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #101027;
+    border: 1px solid #3030ff;
+    padding: 28px;
+    border-radius: 15px;
+    width: 260px;
+    box-shadow: 0 0 15px #1717aa;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #7b2cff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    border-top: 1px solid #222;
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 4px;
+    }
+
+    section {
+        padding: 145px 5% 50px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VOLTEX</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gaming">Gaming</a>
+        <a href="#education">Education</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>WELCOME TO VOLTEX</h1>
+
+    <p>
+        Your ultimate destination for gaming
+        and learning. Play games and study smarter!
+    </p>
+
+    <a href="#gaming" class="btn">EXPLORE GAMING</a>
+    <a href="#education" class="btn">START LEARNING</a>
+</section>
+
+<section id="about">
+    <h2>ABOUT VOLTEX</h2>
+
+    <p>
+        VOLTEX is a gaming and education portal.
+        Explore games, discover learning resources
+        and enjoy a modern neon experience.
+    </p>
+</section>
+
+<section id="gaming">
+    <h2>🎮 GAMING ZONE</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h2>ROBLOX</h2>
+            <p>Enter the Roblox gaming world.</p>
+            <a class="btn"
+               href="https://www.roblox.com/home"
+               target="_blank"
+               rel="noopener noreferrer">
+               PLAY ROBLOX
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>📚 CLASS 8 LEARNING ZONE</h2>
+
+    <p>
+        Learn Class 8 subjects with free educational
+        videos on YouTube and Physics Wallah.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>PW LEARNING</h2>
+            <p>Open Physics Wallah's official website.</p>
+
+            <a class="btn"
+               href="https://www.pw.live/"
+               target="_blank"
+               rel="noopener noreferrer">
+               OPEN PW
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>MATHEMATICS</h2>
+            <p>Free Class 8 maths video lessons.</p>
+
+            <a class="btn"
+               href="https://www.youtube.com/results?search_query=class+8+NCERT+maths+full+chapter+lectures"
+               target="_blank"
+               rel="noopener noreferrer">
+               WATCH MATHS
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>SCIENCE</h2>
+            <p>Class 8 science explanations and lessons.</p>
+
+            <a class="btn"
+               href="https://www.youtube.com/results?search_query=class+8+NCERT+science+full+chapter+lectures"
+               target="_blank"
+               rel="noopener noreferrer">
+               WATCH SCIENCE
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>SOCIAL SCIENCE</h2>
+            <p>History, Geography and Civics lessons.</p>
+
+            <a class="btn"
+               href="https://www.youtube.com/results?search_query=class+8+NCERT+social+science+lectures"
+               target="_blank"
+               rel="noopener noreferrer">
+               WATCH SST
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>ENGLISH</h2>
+            <p>Grammar and English chapter explanations.</p>
+
+            <a class="btn"
+               href="https://www.youtube.com/results?search_query=class+8+English+NCERT+chapter+explanation"
+               target="_blank"
+               rel="noopener noreferrer">
+               WATCH ENGLISH
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>HINDI</h2>
+            <p>Class 8 Hindi lessons and explanations.</p>
+
+            <a class="btn"
+               href="https://www.youtube.com/results?search_query=class+8+Hindi+NCERT+chapter+explanation"
+               target="_blank"
+               rel="noopener noreferrer">
+               WATCH HINDI
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 VOLTEX.HTML | GAMING + EDUCATION
+</footer>
+
+</body>
+</html>
+
